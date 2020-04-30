@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.rowclass
+{
+	margin: 50px;
+}
+.w3-third
+{
+width:250px;
+}
+.w3-third1
+{
+width:100px;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-container w3-teal">
+  <h2>Input Form</h2>
+</div>
+<br>
+
+<center><label>Welcome {{ mam.Teacher_Name }} Mam</label></center>
+<br>
+
+<div class="w3-card-4">
+<br>
+	<div>
+    	<label for="favorite-animal" style="margin:30px;margin-left:50px;">Select Appropirate Option</label><br><br>
+	</div>
+<form class="w3-container" style="margin-left:20%;" action="addsubject1" method="post">	
+{% csrf_token %}	
+        <table style="margin:0px;spacing:15px;margin-left:200px;" cellspacing="15">
+        	<tr class="rowclass">
+        		<td>
+                           <div>
+    	                      <label for="favorite-animal" >Subject</label>
+	                   </div>
+                        </td>
+                        <td>
+                           <div class="w3-third">
+   		       	         <input class="w3-input w3-border" name="Subject_Name" type="text" placeholder="Two">
+  			    </div>
+            	        </td>
+                        
+                 
+                 </tr>
+     </table>
+
+
+
+<br><br>
+<center><input type="submit" value="Submit"></center>
+</form>
+</div>
+
+</body>
+</html> 
